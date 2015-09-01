@@ -8,9 +8,9 @@ RUN \
     cd /data/install && \
     wget https://github.com/simple-rtmp-server/srs/archive/2.0a0.tar.gz && \
     tar xvpf 2.0a0.tar.gz && \
-    cd simple-rtmp-server-2.0a0/trunk && \
+    cd srs-2.0a0/trunk && \
     ./configure --with-ssl --with-hls --with-dvr --with-nginx --with-http-server --with-http-api --with-ffmpeg --with-transcode --with-ingest --with-stat --without-http-callback --without-librtmp --without-research --without-utest --without-gperf --without-gmc --without-gmp --without-gcp --without-gprof --without-arm-ubuntu12 && \
-    make -j16 && \
+    make -j8 && \
     cp -rL objs/ffmpeg/ /usr/local/ && \
     cp -L objs/srs /usr/local/bin/ && \
     cd /data && \
