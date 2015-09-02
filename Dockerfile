@@ -8,7 +8,7 @@ RUN \
     mkdir -p /data/install && \
     mkdir -p /usr/local/srs && \
     cd /data/install && \
-    git clone http://github.com/simple-rtmp-server/srs.git -b 2.0release && \
+    git clone https://github.com/JinruiWang/srs.git -b 2.0release && \
     cd srs/trunk && \
     sed "s/sudo//g" auto/depends.sh && \
     ./configure --with-stream-caster && \
